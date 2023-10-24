@@ -1,13 +1,35 @@
 <?php
 
 include 'koneksi.php';
-if (isset($_POST[""])) {
+if (isset($_POST["login"])) {
   $username = $_POST['user'];
   $password = $_POST['pass'];
 
-  $ambil = mysql_query($koneksi,"SELECT * FROM user WHERE username ='$username'");
+  $ambil = mysqli_query($koneksi,"SELECT * FROM user WHERE username ='$username'");
+
+  if (mysqli_num_rows($ambil) == 1) {
+    $data = mysqli_fetch_assoc($ambil);
+
+    if (password_verify($password,$data['password'])){
+      header("location:admin.php");
+      exit();
+    }
+    else {
+      echo"<script>
+      alert('username atau password salah');
+      window.location = 'index.php';
+      </script>";
+    }
+
+  }else {
+      echo"<script>
+      alert('username atau password salah');
+      window.location = 'index.php';
+      </script>";
+    }
+  }
   
-}
+
 ?>
 
 
