@@ -1,16 +1,24 @@
 <?php
+session_start();
 
 include 'koneksi.php';
+
+if (isset($_SESSION['login'])){
+  header("location:admin.php");
+  exit;
+}
 if (isset($_POST["login"])) {
   $username = $_POST['user'];
   $password = $_POST['pass'];
+
+  $_SESSION['login'] = $_POST['login'];
 
   $ambil = mysqli_query($koneksi,"SELECT * FROM user WHERE username ='$username'");
 
   if (mysqli_num_rows($ambil) == 1) {
     $data = mysqli_fetch_assoc($ambil);
-
     if (password_verify($password,$data['password'])){
+      $_SESSION['nama'] = $data['nama'];
       header("location:admin.php");
       exit();
     }
