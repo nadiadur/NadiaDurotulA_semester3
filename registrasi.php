@@ -8,20 +8,22 @@ if(isset($_POST["submit"])){
 	$password1 = $_POST['password1'];
 	$password2 = $_POST['password2'];
 
+	//untuk inputan nama,username,dan password agar masuk ke database
 	$cek_user = mysqli_query($koneksi,"SELECT * FROM user WHERE username = '$username'");
 	$cek_login = mysqli_num_rows($cek_user);
-
+//memberikan notif alert
 	if($cek_login > 0){
 		echo "<script>
 		alert('username telah terdaftar');
 		window.location = 'registrasi.php';
 		</script>";
 	}else{
-		if($password1 !=$password1){
+		if($password1 !=$password2){
 			echo "<script>
 		alert('konfirmasi password tidak sesuai');
 		window.location = 'registrasi.php';
 		</script>";
+		//memberikan akses keamanan pada password
 		}else {
 			$password = password_hash($password1, PASSWORD_DEFAULT);
 			mysqli_query($koneksi,"INSERT INTO user VALUES('','$nama','$username','$password')");
@@ -40,12 +42,7 @@ if(isset($_POST["submit"])){
 
 
 
-<!--
-Author: Colorlib
-Author URL: https://colorlib.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -78,7 +75,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		</div>
 		<!-- copyright -->
 		<div class="colorlibcopy-agile">
-			<p>© 2018 Colorlib Signup Form. All rights reserved | Design by <a href="https://colorlib.com/" target="_blank">Colorlib</a></p>
+			<p>© 2023 Nadia Durrotul. All rights reserved  <a href="https://colorlib.com/" target="_blank">Colorlib</a></p>
 		</div>
 		<!-- //copyright -->
 		<ul class="colorlib-bubbles">

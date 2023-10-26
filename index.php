@@ -1,12 +1,13 @@
 <?php
-session_start();
+session_start();//agar halaman admin tidak bocor
 
 include 'koneksi.php';
 
 if (isset($_SESSION['login'])){
   header("location:admin.php");
   exit;
-}
+}//cek apabila sudah pernah login maka akan dikembalikan pada adin.php
+
 if (isset($_POST["login"])) {
   $username = $_POST['user'];
   $password = $_POST['pass'];
@@ -14,10 +15,12 @@ if (isset($_POST["login"])) {
   $_SESSION['login'] = $_POST['login'];
 
   $ambil = mysqli_query($koneksi,"SELECT * FROM user WHERE username ='$username'");
-
+//jika ada username sama 
   if (mysqli_num_rows($ambil) == 1) {
     $data = mysqli_fetch_assoc($ambil);
+    //jika nama dan password sudah ada maka akan diarahkan ke admin.php
     if (password_verify($password,$data['password'])){
+    //agar halaman admin tidak bocor
       $_SESSION['nama'] = $data['nama'];
       header("location:admin.php");
       exit();

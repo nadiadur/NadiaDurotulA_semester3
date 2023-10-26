@@ -1,9 +1,10 @@
 <?php
-session_start();
+session_start();//agar halaman admin tidak bocor
 
 if (!isset($_SESSION['login'])) {
     header("location:index.php");
     exit;
+    //untuk melakukan pengecekan apa sudah login atau belum jika belum akan dikembalikan ke index
 }
 ?>
 <html lang="en">
