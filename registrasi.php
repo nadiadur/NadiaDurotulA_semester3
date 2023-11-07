@@ -78,18 +78,7 @@ if(isset($_POST["submit"])){
 			<p>© 2023 Nadia Durrotul. All rights reserved  <a href="https://colorlib.com/" target="_blank">Colorlib</a></p>
 		</div>
 		<!-- //copyright -->
-		<ul class="colorlib-bubbles">
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-		</ul>
+		
 	</div>
 	<!-- //main -->
 </body>

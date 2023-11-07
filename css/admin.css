@@ -1,0 +1,39 @@
+
+.navbar-brand {
+    font-size: 300px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    forced-color-adjust: aqua;
+  }
+/* Untuk menggeser elemen ke kanan */
+.navbar-nav {
+    margin-left: auto;
+}
+.navbar-brand img {
+    width: 130px; /* Ubah lebar gambar sesuai kebutuhan Anda */
+    height: auto; /* Biarkan tinggi otomatis sesuai lebar */
+    margin-left: 50px;
+    margin-bottom: -20px;
+    margin-top: -20px;
+  }
+
+/* Membuat ruang antara elemen navbar */
+.nav-item {
+    margin-right: 20px; /* Sesuaikan dengan jarak yang diinginkan */
+}
+.navbar-brand i, .navbar-nav i {
+    font-size: 30px; /* Ubah ukuran ikon sesuai kebutuhan Anda */
+  }
+  .garis {
+    border: 1px solid rgb(12, 11, 11);
+  background-color: rgb(62, 64, 82);
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+  }
+  .garis h2 {
+    color: aliceblue;
+  }
+  .garis a {
+    color: aliceblue;
+  }

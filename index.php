@@ -1,12 +1,12 @@
 <?php
-session_start();//agar halaman admin tidak bocor
+session_start();//memulai sesi php
 
 include 'koneksi.php';
 
 if (isset($_SESSION['login'])){
   header("location:admin.php");
   exit;
-}//cek apabila sudah pernah login maka akan dikembalikan pada adin.php
+}//masuk ke admin
 
 if (isset($_POST["login"])) {
   $username = $_POST['user'];
@@ -52,7 +52,7 @@ if (isset($_POST["login"])) {
 
   <meta charset="UTF-8">
 
-  <title>CodePen - Log-in</title>
+  <title>Log-in</title>
 
   <link rel='stylesheet' href='http://codepen.io/assets/libs/fullpage/jquery-ui.css'>
 
@@ -75,7 +75,6 @@ if (isset($_POST["login"])) {
   </div>
 </div>
 
-<!-- <div id="error"><img src="https://dl.dropboxusercontent.com/u/23299152/Delete-icon.png" /> Your caps-lock is on.</div> -->
 
   <script src='http://codepen.io/assets/libs/fullpage/jquery_and_jqueryui.js'></script>
 
