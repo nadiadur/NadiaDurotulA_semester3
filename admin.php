@@ -53,24 +53,48 @@ if (!isset($_SESSION['login'])) {
 </div>
 
 <h1 class="text-center pb-4"></h1>
-          <div class="  control pb-4">
+          <div class=" text-center control pb-4">
+            <h2>AYO MENGENAL BAHASA PEMOGRAMAN!</h2>
           <ul>
             <li class="button " >Bahasa Pemograman</li>
+            <li class="button " >W3 School</li>
           </ul>
         </div>
-        <header></header>
-  <div class="container ">
-<input type="button" onclick="window.location.href='https://www.polibang.ac.id/rekayasa-perangkat-lunak-d-iv/';" class="btn1 mt-4" value="Java Script">
+        
+ <div>
+<input type="button" onclick="window.location.href='https://www.w3schools.com/html/default.asp';" class="btn1 mt-4" value="Java Script">
+
+<input type="button" onclick="window.location.href='https://www.w3schools.com/html/default.asp';"class="btn1 mt-4" value="HTML" >
+
+<input type="button" onclick="window.location.href='https://www.w3schools.com/css/default.asp';" class="btn1 mt-4" value="CSS">
+
+<input type="button" onclick="window.location.href='https://www.w3schools.com/php/default.asp';"class="btn1 mt-4" value="PHP" >
+
+<input type="button" onclick="window.location.href='https://www.w3schools.com/python/default.asp';"class="btn1 mt-4" value="Python" >
 </div>
-<div class="container ">
-<input type="button" onclick="window.location.href='https://github.com/nadiadur/nadia';"class="btn1 mt-3" value="HTML" >
+
+</section>
+<header></header>
+<h1 class="text-center pb-4"></h1>
+          <div class=" text-center control pb-4">
+          <ul>
+            <li class="button " >Bahasa Pemograman</li>
+            <li class="button " >Petani Kode</li>
+          </ul>
+        </div>
+        
+ <div>
+<input type="button" onclick="window.location.href='https://www.petanikode.com/javascript-dasar/';" class="btn2 mt-4" value="Java Script">
+
+<input type="button" onclick="window.location.href='https://www.petanikode.com/html-dasar/';"class="btn2 mt-4" value="HTML" >
+
+<input type="button" onclick="window.location.href='https://www.petanikode.com/css-untuk-pemula/';" class="btn2 mt-4" value="CSS">
+
+<input type="button" onclick="window.location.href='https://www.petanikode.com/php-konsep/';"class="btn2 mt-4" value="PHP" >
+
+<input type="button" onclick="window.location.href='https://www.petanikode.com/python-linux/';"class="btn2 mt-4" value="Python" >
 </div>
-<div class="container ">
-<input type="button" onclick="window.location.href='https://www.polibang.ac.id/rekayasa-perangkat-lunak-d-iv/';" class="btn1 mt-3" value="CSS">
-</div>
-<div class="container ">
-<input type="button" onclick="window.location.href='https://github.com/nadiadur/nadia';"class="btn1 mt-3" value="PHP" >
-</div>     
+
 </section>
    
 
