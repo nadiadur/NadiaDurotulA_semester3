@@ -1,8 +1,23 @@
 
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
 .navbar-brand {
     font-size: 300px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     forced-color-adjust: aqua;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
   }
 /* Untuk menggeser elemen ke kanan */
 .navbar-nav {
@@ -33,7 +48,47 @@
   }
   .garis h2 {
     color: aliceblue;
+    margin-left: 100px;
   }
   .garis a {
     color: aliceblue;
+    margin-left: 100px;
   }
+  .garis a:hover {
+    color:aqua;
+  }
+  .modul h4 {
+    
+      width: 300px;
+      height: 100px;  
+      padding: 50px;
+      border: 1px;
+  }
+
+  .btn1{
+    margin-left: 100px;
+    height: 40px;
+    width: 145px;
+    outline: none;
+    border: none;background-color: black;
+    color: white;
+    border-radius: 4px;
+}
+.btn1:hover{
+    background-color: transparent;
+    color: black;
+    border: 1px solid black;
+    transition: 0.5s;
+}
+.control ul li{
+  list-style: none;
+  background-color: rgb(139, 138, 138);
+  padding: 5px 15px;
+  color: rgb(255, 255, 255);
+  display: inline-block;
+  cursor: pointer;
+  margin-left: 580px;
+}
+header {
+  border: 1px solid #000;
+}

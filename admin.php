@@ -24,7 +24,7 @@ if (!isset($_SESSION['login'])) {
     <title>Profile</title>
   </head>
   <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top text-uppercase">
   <a class="navbar-brand" href="#">
     <img src="talk.png" alt="Talk-Talk Logo"> 
   </a>
@@ -46,14 +46,34 @@ if (!isset($_SESSION['login'])) {
     </ul>
   </div>
 </nav>
-
+<section class="main py-5">
 <div class="garis">
 <h2>Selamat Datang <?php echo $_SESSION['nama'] ?></h2>
     <a href="logout.php">Logout</a>
 </div>
 
-
+<h1 class="text-center pb-4"></h1>
+          <div class="  control pb-4">
+          <ul>
+            <li class="button " >Bahasa Pemograman</li>
+          </ul>
+        </div>
+        <header></header>
+  <div class="container ">
+<input type="button" onclick="window.location.href='https://www.polibang.ac.id/rekayasa-perangkat-lunak-d-iv/';" class="btn1 mt-4" value="Java Script">
+</div>
+<div class="container ">
+<input type="button" onclick="window.location.href='https://github.com/nadiadur/nadia';"class="btn1 mt-3" value="HTML" >
+</div>
+<div class="container ">
+<input type="button" onclick="window.location.href='https://www.polibang.ac.id/rekayasa-perangkat-lunak-d-iv/';" class="btn1 mt-3" value="CSS">
+</div>
+<div class="container ">
+<input type="button" onclick="window.location.href='https://github.com/nadiadur/nadia';"class="btn1 mt-3" value="PHP" >
+</div>     
+</section>
    
+
     
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
